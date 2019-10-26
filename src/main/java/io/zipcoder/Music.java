@@ -9,6 +9,17 @@ public class Music {
     }
 
     public Integer selection(Integer startIndex, String selection){
-        return null;
+        int counterF = 0;
+        int counterB = 0;
+        for(int i = 0; i <= startIndex; i++){
+            counterF++;
+        }
+        for(int j = 0; j <= playList.length; j++){
+            counterB++;
+        }
+        if(counterF < counterB){
+            return counterF;
+        }
+        return counterB;
     }
 }
